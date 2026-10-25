@@ -10,18 +10,20 @@
 <main>
   <a class="brand" href="./">EatUp</a>
   <h1>Privacy Policy</h1>
-  <p class="date">Effective October 20, 2026</p>
+  <p class="date">Effective October 25, 2026</p>
 
   <p>EatUp is made by Kyle Lokker ("we"). This policy explains what EatUp collects, why, and the choices you have. In short: we only collect what the app needs to work, we never sell your data, and there are no ads or trackers.</p>
 
   <h2>What we collect</h2>
   <ul>
-    <li><strong>Your account:</strong> your email address, and your name if you sign in with Apple or Google and choose to share it.</li>
-    <li><strong>Your kitchen:</strong> the food in your fridge (names, amounts, expiration dates) and your grocery list, so they are backed up and available on your other phones.</li>
+    <li><strong>Your account:</strong> your email address, your name if you sign in with Apple or Google and choose to share it (or type it in), and your answers to "What brings you to EatUp?" if you give them.</li>
+    <li><strong>Your kitchen:</strong> the food in your fridge (names, amounts, expiration dates, where it's kept), your grocery list, your recipe ideas, and the expiration dates you correct (so the app learns how long food lasts for you). They are backed up and available on your other phones.</li>
     <li><strong>Receipt photos:</strong> when you scan a receipt, the photo is sent to our server to read the items on it. We don't keep the photo after it has been read.</li>
-    <li><strong>Usage counts:</strong> how many receipts you have scanned and when you last got new recipe ideas, to apply the limits of the free plan.</li>
+    <li><strong>Barcodes and products:</strong> when you scan a barcode or pick a product from the food list, the barcode number or product is sent to our server to look it up.</li>
+    <li><strong>Usage counts:</strong> how many receipts and barcodes you have scanned and when you last got new recipe ideas, to apply the limits of the free plan.</li>
+    <li><strong>Your plan:</strong> whether you have Premium and until when. We never see your payment details; Apple handles payment.</li>
   </ul>
-  <p>Reminders are scheduled on your phone; we don't send or see them. EatUp does not collect your location, contacts, or advertising identifiers.</p>
+  <p>Reminders are scheduled on your phone; we don't send or see them. If you use the microphone to say what you bought, your speech is turned into text by Apple's speech recognition, and we only receive the text. EatUp does not collect your location, contacts, or advertising identifiers.</p>
 
   <h2>How we use it</h2>
   <p>Only to run EatUp: to sign you in, save and sync your fridge and grocery list, read your receipts, suggest recipes, and apply your plan. We don't sell or rent your information, and we don't use it for advertising.</p>
@@ -32,7 +34,9 @@
     <li><strong>Supabase</strong> stores your account, fridge and grocery list, and runs our server.</li>
     <li><strong>Anthropic (Claude)</strong> reads receipt photos and writes recipe ideas. It receives the photo or the list of foods in your fridge, not your name or email.</li>
     <li><strong>Unsplash</strong> and <strong>Replicate</strong> provide recipe pictures. They only receive the name of a dish.</li>
-    <li><strong>Apple</strong> and <strong>Google</strong> handle signing in if you choose them, and Apple handles any purchases.</li>
+    <li><strong>Open Food Facts</strong> (a free, public product database) looks up scanned barcodes. It only receives the barcode number.</li>
+    <li><strong>Apple</strong> and <strong>Google</strong> handle signing in if you choose them. Apple handles purchases and payment.</li>
+    <li><strong>RevenueCat</strong> keeps track of your Premium subscription. It receives a random account code and your purchase details from Apple, not your name or email.</li>
   </ul>
 
   <h2>Keeping and deleting your data</h2>
